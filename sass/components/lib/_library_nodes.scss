@@ -1,0 +1,73 @@
+article.node-rsc-library-article,
+article.node-rsc-library-link,
+article.node-rsc-library-request,
+article.node-rsc-library-book-preview {
+  ul.article-info {
+    padding: 0;
+    margin: rhythm(1) 0;
+    
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 0 $indent-amount;
+      border-left: 1px solid $color-text;
+    }
+    
+    li.first {
+      text-transform: uppercase;
+      color: $orange6;
+      font-weight: bold;
+      padding-left: 0;
+      border-left: none;
+      a {
+        color: $orange6;
+      }
+    }
+  }
+  ul.fields-list {
+    font-style:oblique;
+    padding: 0;
+    margin: rhythm(1) 0;
+    list-style-type: none;
+    .field-subscription {
+      padding-left: $indent-amount;
+    }
+  }
+  div.field-name-rscl-attachment article {
+    margin-top: rhythm(1);
+    margin-bottom: rhythm(1);
+  }
+  div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
+  div.field-name-rscl-link {
+    display: inline;
+    @include library_button;
+  }
+  article.field-name-rscl-full-text {
+    header {
+      padding-left: $indent-amount * 3;
+      background-image: url('../images/icon-text.png');
+      background-repeat: no-repeat;
+      background-size: auto $indent-amount;
+      background-position: 0 rhythm(0.5);
+
+      * {
+        margin: 0;
+      }
+      margin-top: rhythm(1);
+      margin-bottom: rhythm(1);
+    }
+  }
+}
+
+article.node-rsc-library-book-preview {
+
+  ul.book-links-list {
+    padding-left: 0;
+  }
+
+  ul.book-links-list > li {
+    display: inline-block;
+    @include library_button;
+  }
+
+}

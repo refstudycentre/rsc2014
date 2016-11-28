@@ -1,0 +1,106 @@
+ul.rsc-attachment-formatter-list.js {
+
+  background-image: url('../images/icon-text.png');
+  background-repeat: no-repeat;
+  background-size: auto $indent-amount;
+  background-position: 0 center;
+
+  padding: rhythm(0.5, $h3-font-size) 0 rhythm(0.5, $h3-font-size) $indent-amount * 3;
+  margin: 0;
+  @include adjust-font-size-to( $h3-font-size );
+
+  list-style-type: none;
+  position: relative;
+
+  a:link,
+  a:visited {
+    color: white;
+  }
+
+  li.read {
+    display: inline;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+    margin: rhythm(0.25, $h3-font-size) 0;
+  }
+
+  div.drop {
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+    margin: rhythm(0.25, $h3-font-size) 0;
+    background-color: $orange6;
+    position: absolute;
+    left: $indent-amount * 4;
+    border-radius: 5px;
+    li {
+      white-space: nowrap;
+    }
+  }
+
+  a.more {
+    padding-left: $indent-amount-small;
+    margin-left: $indent-amount-small;
+    border-left: 1px solid white;
+  }
+
+}
+
+div.rsc-attachment-formatter-audio {
+  text-align: center;
+
+  background-image: url('../images/icon-audio.png');
+  background-repeat: no-repeat;
+  background-size: auto $indent-amount;
+  background-position: 0 center;
+  padding-left: $indent-amount * 2;
+
+  height: rhythm(2);
+  
+  a:link,
+  a:visited {
+    color: white;
+    background-color: $orange6;
+    border-radius: 5px;
+    padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+    @include adjust-font-size-to( $h3-font-size );
+  }
+  audio {
+    background-color: $blue6;
+    border-radius: 5px;
+    position: relative;
+    top: 8px; // This is a hack... TODO: figure out a better way to center audio in a div
+  }
+}
+
+div.rsc-attachment-formatter-video {
+
+  div {
+    background-image: url('../images/icon-video.png');
+    background-repeat: no-repeat;
+    background-size: rhythm(2) auto;
+    padding-left: $indent-amount * 3;
+    height: rhythm(2);
+
+    a:link,
+    a:visited {
+
+      color: white;
+      background-color: $orange6;
+      border-radius: 5px;
+      padding: rhythm(0.25, $h3-font-size) $indent-amount-small;
+      margin: rhythm(0.25, $h3-font-size) 0;
+      @include adjust-font-size-to( $h3-font-size );
+
+      position: absolute;
+
+    }
+
+  }
+
+  video {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+}
+
