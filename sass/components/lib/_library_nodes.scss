@@ -24,14 +24,9 @@ article.node-rsc-library-book-preview {
       }
     }
   }
-  ul.fields-list {
+  .source-info,
+  .field-name-rscl-copyright-notice {
     font-style:oblique;
-    padding: 0;
-    margin: rhythm(1) 0;
-    list-style-type: none;
-    .field-subscription {
-      padding-left: $indent-amount;
-    }
   }
   div.field-name-rscl-attachment article {
     margin-top: rhythm(1);
