@@ -28,12 +28,11 @@ article.node-rsc-library-book-preview {
   .field-name-rscl-copyright-notice {
     font-style:oblique;
   }
-  div.field-name-rscl-attachment article {
+  .field-name-rscl-attachment article {
     margin-top: rhythm(1);
     margin-bottom: rhythm(1);
   }
-  div.field-form input[type="submit"], // TODO: this should be in rsc2014_cl subtheme?
-  div.field-name-rscl-link {
+  .field-name-rscl-link {
     display: inline;
     @include library_button;
   }
