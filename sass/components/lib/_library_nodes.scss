@@ -32,6 +32,7 @@ article.node-rsc-library-book-preview {
     margin-top: rhythm(1);
     margin-bottom: rhythm(1);
   }
+  .field-name-rscl-link, // This is for backward compatibility. TODO: Remove this once content has been fully migrated to the rsc_library_link type, and the rscl-link field has been removed from the rsc_library_article type.
   .field-name-rscl-link-to-content {
     display: inline;
     @include library_button;
